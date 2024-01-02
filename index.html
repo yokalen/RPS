@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Rock, Paper, Scissors...</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section><h1>Rock, paper, scissors...</h1></section>
+
+		<section>
+			<img id="rock" src="img/rockM.jpeg" alt="rock">
+			<img id="paper" src="img/paperM.jpeg" alt="paper">
+			<img id="scissors" src="img/scissorsM.jpeg" alt="scissors">
+		</section>
+
+		<section>
+			<h2 id="you"></h2>
+			<h3>VS</h3>
+			<h2 id="opp"></h2>
+		</section>
+		
+			<button id="shoot" onclick="{game()}">Shoot!</button>
+			<button id="reload" onclick="{reset()}" class="hidden">Reload</button>
+
+		<section>
+			<h1 id="result"></h1>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
