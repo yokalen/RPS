@@ -1,7 +1,6 @@
 let player1 = ''
 let player2 = ''
 const allImages = document.querySelectorAll('img');
-// *Functions*
 
 // returns rock, paper, or scissors as randomly as possible
 const shoot = () => {
@@ -52,10 +51,12 @@ const game = () => {
 
         //compare player1 to player 2 - who won?
         announce();
+        //changes button from 'shoot' to 'reload'
+        document.getElementById('shoot').classList.add('hidden');
+        document.getElementById('reload').classList.remove('hidden');
+    }else{
+        alert(`You're firing blanks. Reload and choose rock, paper, or scissors..`)
     }
-    document.getElementById('shoot').classList.add('hidden');
-    document.getElementById('reload').classList.remove('hidden');
-
   };
 
 // Click event to select RPS
@@ -65,7 +66,7 @@ document.addEventListener('click', (e) => {
         allImages.forEach(img => {
             img.classList.remove('selected')
     });
-    // set player's choice
+    // set player's choice by adding selection indicator
     e.target.classList.add('selected');
     player1 = e.target.id
     document.getElementById('you').innerText = player1
