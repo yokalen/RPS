@@ -1,8 +1,28 @@
 /******************************************
 /* CSS
 /*******************************************/
+@media (max-width: 650px) {
+  section{
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 44px;
+  }
+  img{
+    padding: 2em 0;
+  }
+  button{
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
 *{
-  font: 10em 12em 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   text-align: center;
 }
 
@@ -53,3 +73,4 @@ section{
 #opp{
   color: red;
 }
+

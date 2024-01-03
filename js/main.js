@@ -55,7 +55,7 @@ const game = () => {
         document.getElementById('shoot').classList.add('hidden');
         document.getElementById('reload').classList.remove('hidden');
     }else{
-        alert(`You're firing blanks. Reload and choose rock, paper, or scissors..`)
+        alert(`You're firing blanks. Choose rock, paper, or scissors..`)
     }
   };
 
